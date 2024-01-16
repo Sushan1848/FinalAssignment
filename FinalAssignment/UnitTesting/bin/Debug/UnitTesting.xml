@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnitTesting</name>
+    </assembly>
+    <members>
+        <member name="M:UnitTesting.ErrorTestingIF.ExecuteCommandWithInvalidIfSyntaxShouldResultError">
+            <summary>
+            Executes command with invalid If syntax; should result in an error.
+            </summary>
+        </member>
+    </members>
+</doc>

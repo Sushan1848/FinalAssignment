@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Software Engineering Assignment</name>
+    </assembly>
+    <members>
+        <member name="T:Software_Engineering_Assignment.Circle">
+            <summary>
+            We created Circle class to create a shape 'circle' when user gives command in textbox
+            </summary>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Circle.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            We have ovverridden draw method to draw circle
+            radius is given by users
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Software_Engineering_Assignment.Commands.FilterCommand">
+            <summary>
+            Class to filter and execute commands.
+            </summary>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Commands.FilterCommand.#ctor(System.Drawing.Graphics)">
+            <summary>
+            Constructor for FilterCommand.
+            </summary>
+            <param name="g">Graphics object.</param>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Commands.FilterCommand.ExecuteCommands(System.String,System.String)">
+            <summary>
+            Execute commands based on specified run and commands parameters.
+            </summary>
+            <param name="run">Run parameter.</param>
+            <param name="commands">Command string.</param>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Commands.FilterCommand.IsValidCommand">
+            <summary>
+            Show an error message for invalid commands.
+            </summary>
+        </member>
+        <member name="F:Software_Engineering_Assignment.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Software_Engineering_Assignment.Rectangle">
+            <summary>
+            We created rectangle class to create a shape 'rectangle' when user gives command in textbox
+            </summary>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Rectangle.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            We have ovverridden draw method to draw rectangle
+            length and heights are given by users
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Software_Engineering_Assignment.Shape">
+            <summary>
+            We have created an abstract class Shape to inherit position to create different shapes like rectangle, traingle and so on
+            </summary>
+        </member>
+        <member name="F:Software_Engineering_Assignment.Shape.colour">
+            <summary>
+            We have given color variable to give colors to different shapes
+            We have protected to give access to only child classes
+            </summary>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Shape.#ctor(System.Drawing.Color,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            </summary>
+            <param name="colour">This is where we give shape's colour</param>
+            <param name="x">We get the position of x thorugh this</param>
+            <param name="y"> We get the position of y thorugh this </param>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Shape.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Any derrived class must implement this method to draw shapes
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Software_Engineering_Assignment.ShapeFactory.getShape(System.String,System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="shapeType"></param>
+            <param name="colour"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="length"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Software_Engineering_Assignment.Triangle">
+            <summary>
+            We created a triangle class to create a shape 'triangle' when the user gives a command in the textbox.
+            </summary>
+        </member>
+        <member name="M:Software_Engineering_Assignment.Triangle.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            We have overridden the draw method to draw a triangle.
+            The side lengths are given by the user. 
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Software_Engineering_Assignment.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Software_Engineering_Assignment.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Software_Engineering_Assignment.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:Assignment1.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>
