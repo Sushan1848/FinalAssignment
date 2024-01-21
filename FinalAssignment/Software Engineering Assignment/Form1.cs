@@ -166,5 +166,13 @@ namespace Software_Engineering_Assignment
                 "\n Presented by Sushan Dhakal ",
             "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FlowerPattern flowerPattern = new FlowerPattern(Color.Red, 100, 100, 50, true);
+
+            // Draw the flower pattern
+            flowerPattern.draw(g, true);
+        }
     }
 }

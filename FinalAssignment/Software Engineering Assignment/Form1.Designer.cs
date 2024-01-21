@@ -41,6 +41,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MultiLineTextBox2 = new System.Windows.Forms.TextBox();
+            this.InstantButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             this.OutputBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.OutputBox.Location = new System.Drawing.Point(796, 42);
             this.OutputBox.Name = "OutputBox";
-            this.OutputBox.Size = new System.Drawing.Size(364, 406);
+            this.OutputBox.Size = new System.Drawing.Size(364, 379);
             this.OutputBox.TabIndex = 1;
             // 
             // RunButton
@@ -118,21 +119,21 @@
             // loadMenu
             // 
             this.loadMenu.Name = "loadMenu";
-            this.loadMenu.Size = new System.Drawing.Size(224, 26);
+            this.loadMenu.Size = new System.Drawing.Size(125, 26);
             this.loadMenu.Text = "Load";
             this.loadMenu.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveMenu
             // 
             this.saveMenu.Name = "saveMenu";
-            this.saveMenu.Size = new System.Drawing.Size(224, 26);
+            this.saveMenu.Size = new System.Drawing.Size(125, 26);
             this.saveMenu.Text = "Save";
             this.saveMenu.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -147,7 +148,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -160,11 +161,22 @@
             this.MultiLineTextBox2.TabIndex = 7;
             this.MultiLineTextBox2.TextChanged += new System.EventHandler(this.MultiLineTextBox2_TextChanged);
             // 
+            // InstantButton
+            // 
+            this.InstantButton.Location = new System.Drawing.Point(861, 427);
+            this.InstantButton.Name = "InstantButton";
+            this.InstantButton.Size = new System.Drawing.Size(269, 23);
+            this.InstantButton.TabIndex = 8;
+            this.InstantButton.Text = "Click here for instant shape";
+            this.InstantButton.UseVisualStyleBackColor = true;
+            this.InstantButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1186, 460);
+            this.Controls.Add(this.InstantButton);
             this.Controls.Add(this.MultiLineTextBox2);
             this.Controls.Add(this.SyntaxButton);
             this.Controls.Add(this.SingleLineTextBox);
@@ -197,6 +209,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.TextBox MultiLineTextBox2;
+        private System.Windows.Forms.Button InstantButton;
     }
 }
 
